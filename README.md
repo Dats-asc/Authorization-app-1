@@ -13,3 +13,6 @@
 
 
 ![Simulator Screen Shot - iPhone 12 - 2021-07-24 at 23 02 13](https://user-images.githubusercontent.com/70961793/126877481-c07e811f-bf8f-472a-a7d2-85f61dd784e6.png)
+
+<img width="355" alt="Снимок экрана 2021-07-24 в 23 16 24" src="https://user-images.githubusercontent.com/70961793/126877708-f72a6232-070b-425d-85ac-08e334b49c5e.png">
+
