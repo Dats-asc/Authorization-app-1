@@ -13,4 +13,10 @@
 
 <img width="353" alt="Снимок экрана 2021-07-24 в 23 18 20" src="https://user-images.githubusercontent.com/70961793/126877759-436841cd-fe82-40c4-9406-4ede0ee8003f.png">
 
+<img width="353" alt="Снимок экрана 2021-07-24 в 23 20 16" src="https://user-images.githubusercontent.com/70961793/126877835-89608978-ab9c-4e06-8ee8-57744637ddd2.png">
+
+
+<img width="353" alt="Снимок экрана 2021-07-24 в 23 20 48" src="https://user-images.githubusercontent.com/70961793/126877836-3e69d3fc-3529-4d9d-901a-484d07593f21.png">
+
+
 
