@@ -14,8 +14,6 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var secondNameLabel: UILabel!
     @IBOutlet weak var emalLabel: UILabel!
     @IBOutlet weak var greetingLabel: UILabel!
-    @IBOutlet weak var profileImage: UIImageView!
-    
     private var users = Users()
     
     override func viewDidLoad() {
@@ -26,10 +24,10 @@ class ProfileViewController: UIViewController {
     
     private func setPersonData(){
         let account = UserData.sharedInstance.user
-        nameLabel.text = account?.name
-        secondNameLabel.text = account?.secondName
         emalLabel.text = account?.email
         let name = account?.name ?? ""
+        let surName = account?.secondName ?? ""
+        nameLabel.text = "\(name) \(surName)"
         greetingLabel.text = "Welcome, " + name + "!"
     }
     
