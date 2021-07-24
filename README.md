@@ -5,3 +5,7 @@
 ввести эти логин и пароль приложение загрузит данные в профиль.
 
 Из мелочей также добавил переключатель для запоминания логина и пароля, переключатель видимости пароля.
+
+![Simulator Screen Shot - iPhone 12 - 2021-07-24 at 23 01 26](https://user-images.githubusercontent.com/70961793/126877477-dd88187a-0672-4967-b365-715472cace84.png)
+![Simulator Screen Shot - iPhone 12 - 2021-07-24 at 23 01 45](https://user-images.githubusercontent.com/70961793/126877478-a47fe282-96dd-4025-9141-30e3042cb017.png)
+![Simulator Screen Shot - iPhone 12 - 2021-07-24 at 23 02 13](https://user-images.githubusercontent.com/70961793/126877481-c07e811f-bf8f-472a-a7d2-85f61dd784e6.png)
