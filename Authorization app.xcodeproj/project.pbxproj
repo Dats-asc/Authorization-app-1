@@ -18,6 +18,7 @@
 		96DD505226AB0B900043C5DA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DD505126AB0B900043C5DA /* SignUpViewController.swift */; };
 		96DD505926AB0D180043C5DA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DD505826AB0D180043C5DA /* ProfileViewController.swift */; };
 		96DD505C26AB38130043C5DA /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DD505B26AB38130043C5DA /* Profile.swift */; };
+		96DD505E26AC5DBB0043C5DA /* LoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DD505D26AC5DBB0043C5DA /* LoadViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		96DD505126AB0B900043C5DA /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		96DD505826AB0D180043C5DA /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		96DD505B26AB38130043C5DA /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		96DD505D26AC5DBB0043C5DA /* LoadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 				96DD505126AB0B900043C5DA /* SignUpViewController.swift */,
 				96866BD926A8852A0012346D /* SignInViewController.swift */,
 				96DD505826AB0D180043C5DA /* ProfileViewController.swift */,
+				96DD505D26AC5DBB0043C5DA /* LoadViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 			files = (
 				96866BDA26A8852A0012346D /* SignInViewController.swift in Sources */,
 				96DD505C26AB38130043C5DA /* Profile.swift in Sources */,
+				96DD505E26AC5DBB0043C5DA /* LoadViewController.swift in Sources */,
 				96866BD626A8852A0012346D /* AppDelegate.swift in Sources */,
 				96DD505926AB0D180043C5DA /* ProfileViewController.swift in Sources */,
 				96DD505226AB0B900043C5DA /* SignUpViewController.swift in Sources */,

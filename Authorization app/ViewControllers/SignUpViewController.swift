@@ -21,6 +21,9 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var secureButton: UIButton!
     
     private var passwordIsHidden = true
+    private var signUpData: User?
+    private let users = Users()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -39,6 +42,8 @@ class SignUpViewController: UIViewController {
         return emailPred.evaluate(with: passwordTextField.text)
     }
     
+    
+    //Проверка полей на привильный ввод
     private func allFieldsAreCorrect() -> Bool{
         var name = ""
         if nameTextField.text != nil{
@@ -82,12 +87,26 @@ class SignUpViewController: UIViewController {
             return true
         }
     }
-
+    
+    // Кнопка регистрации
     @IBAction func signUpButton(_ sender: Any) {
-        if allFieldsAreCorrect(){
+        if allFieldsAreCorrect() && !accountAlreadyExists(){
+            let name = nameTextField.text ?? ""
+            let secondName = secondNameTextField.text ?? ""
+            let email = emailTextField.text ?? ""
+            let password = passwordTextField.text ?? ""
+            var newUser = User(name: name, secondName: secondName, email: email, password: password)
+            newUser.isSignIn = true
+            signUpData = newUser
+            users.saveNewAccount(account: signUpData!)
+            UserData.sharedInstance.user = signUpData
             
+            let vc = storyboard?.instantiateViewController(identifier: "ProfileViewController")
+            self.navigationController?.pushViewController(vc!, animated: true)
         }
     }
+    
+    // Переключатель видимости пароля
     @IBAction func hidePasswordButton(_ sender: Any) {
         if passwordIsHidden{
             passwordTextField.isSecureTextEntry = false
@@ -98,5 +117,22 @@ class SignUpViewController: UIViewController {
             secureButton.tintColor = .systemGray
             passwordIsHidden = true
         }
+    }
+    
+    // Проверка на уже зарегистрированную почту
+    private func accountAlreadyExists() -> Bool{
+        var alreadyExist = false
+        for account in users.accounts{
+            if emailTextField.text == account.email{
+                alreadyExist = true
+                let alert = UIAlertController(title: "Email alert", message: "This account is already registered.", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                NSLog("The \"OK\" alert occured.")
+                }))
+                self.present(alert, animated: true, completion: nil)
+                break
+            }
+        }
+        return alreadyExist
     }
 }

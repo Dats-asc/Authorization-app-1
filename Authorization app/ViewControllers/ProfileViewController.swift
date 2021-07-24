@@ -9,22 +9,35 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
+    @IBOutlet weak var logOutButtonView: UIButton!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var secondNameLabel: UILabel!
+    @IBOutlet weak var emalLabel: UILabel!
+    @IBOutlet weak var greetingLabel: UILabel!
+    @IBOutlet weak var profileImage: UIImageView!
+    
+    private var users = Users()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: true)
-
-        // Do any additional setup after loading the view.
+        setPersonData()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func setPersonData(){
+        let account = UserData.sharedInstance.user
+        nameLabel.text = account?.name
+        secondNameLabel.text = account?.secondName
+        emalLabel.text = account?.email
+        let name = account?.name ?? ""
+        greetingLabel.text = "Welcome, " + name + "!"
     }
-    */
-
+    
+    @IBAction func logOutButton(_ sender: Any) {
+        for i in 0..<users.accounts.count{
+            if users.accounts[i].email == UserData.sharedInstance.user?.email{
+                users.accounts[i].isSignIn = false
+            }
+        }
+    }
 }
