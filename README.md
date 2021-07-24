@@ -6,13 +6,11 @@
 
 Из мелочей также добавил переключатель для запоминания логина и пароля, переключатель видимости пароля.
 
-![Simulator Screen Shot - iPhone 12 - 2021-07-24 at 23 01 26](https://user-images.githubusercontent.com/70961793/126877477-dd88187a-0672-4967-b365-715472cace84.png)
-
-
-![Simulator Screen Shot - iPhone 12 - 2021-07-24 at 23 01 45](https://user-images.githubusercontent.com/70961793/126877478-a47fe282-96dd-4025-9141-30e3042cb017.png)
-
-
-![Simulator Screen Shot - iPhone 12 - 2021-07-24 at 23 02 13](https://user-images.githubusercontent.com/70961793/126877481-c07e811f-bf8f-472a-a7d2-85f61dd784e6.png)
-
 <img width="355" alt="Снимок экрана 2021-07-24 в 23 16 24" src="https://user-images.githubusercontent.com/70961793/126877708-f72a6232-070b-425d-85ac-08e334b49c5e.png">
+
+<img width="353" alt="Снимок экрана 2021-07-24 в 23 17 51" src="https://user-images.githubusercontent.com/70961793/126877757-b5c722a1-901e-42ef-bdd6-d6337138c2ae.png">
+
+
+<img width="353" alt="Снимок экрана 2021-07-24 в 23 18 20" src="https://user-images.githubusercontent.com/70961793/126877759-436841cd-fe82-40c4-9406-4ede0ee8003f.png">
+
 
